@@ -76,10 +76,13 @@ INSERT INTO BOOK VALUES (3, 'Ruby Book', 4000, 1);
 	- DataSourceを⽤いたコネクションを取得するクラス
 - BookDto.java　**※作成済み**
 	- 書籍を表現するクラス
+    - パッケージ：jp.kronos.dto
 - BookDao.java　**※作成済み**
 	- 書籍データを管理するクラス
+    - パッケージ：jp.kronos.dao
 - BookListServlet.java　**※要修正**
 	- 書籍の⼀覧表⽰を管理するサーブレット
+    - パッケージ：jp.kronos.servlet
     - コメントの**TODO**の部分を実装する
 - list.jsp　**※要修正**
 	- 書籍の⼀覧表⽰を管理するJSP
@@ -106,8 +109,8 @@ Tomcatを起動している状態で、ブラウザから以下のURLにアク�
 	- 書籍登録リンクを追加する
 - add.jsp　**※作成済み**
 - BookAddServlet.java　**要新規作成**
-- BookListServlet.java　**※要新規修正**
-	- doGet
+	- パッケージ：jp.kronos.servlet
+    - doGet
     	- 登録画面（add.jsp）にフォワードする
     - doPost
     	- 入力データ（リクエストパラメータ）を取得する
@@ -141,6 +144,7 @@ Tomcatを起動している状態で、ブラウザを開いて以下のURLに�
 - list.jsp　**※要修正**
 	- 削除ボタンを追加する
 - BookDeleteServlet.java　**要新規作成**
+	- パッケージ：jp.kronos.servlet
 	- doPost
     	- リクエストパラメータ（ID）を取得する
         - IDをもとにBookテーブルの対象データを削除する
@@ -169,6 +173,7 @@ Python Bookの削除ボタンをクリックするとPython Bookのデータが�
 - edit.jsp　**※要修正**
 	- コメントの**TODO**の部分を実装する
 - BookEditServlet.java　**※要新規作成**
+	- パッケージ：jp.kronos.servlet
 	- doGet
     	- リクエストパラメータ（ID）を取得する
         - IDをもとにBookデータを取得する
