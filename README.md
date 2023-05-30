@@ -1,4 +1,4 @@
-# JDBC演習 フリマアプリ開発
+# Servlet/JSP MVC演習
 
 ## 準備
 
@@ -94,7 +94,7 @@ INSERT INTO BOOK VALUES (3, 'Ruby Book', 4000, 1);
 
 Tomcatを起動している状態で、ブラウザから以下のURLにアクセスします。<br>http://localhost:8080/book_shop/list
 
-<img src="./img/01-01.png">
+<img src="./img/01-01.png" width="600">
 
 <br><br>
 
