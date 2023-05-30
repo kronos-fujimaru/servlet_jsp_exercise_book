@@ -120,17 +120,17 @@ Tomcatを起動している状態で、ブラウザから以下のURLにアク�
 
 Tomcatを起動している状態で、ブラウザを開いて以下のURLにアクセスします。<br>http://localhost:8080/book_shop/list
 
-<img src="./img/02-01.png">
+<img src="./img/02-01.png" width="600">
 
 書籍登録リンクをクリックすると次の画⾯が表⽰されます。
 
-<img src="./img/02-02.png">
+<img src="./img/02-02.png" width="600">
 
 登録画⾯で下記の情報を⼊⼒して登録ボタンをクリックします。
 - タイトル ︓ Python Book
 - 価格 ︓ 5000
 
-<img src="./img/02-03.png">
+<img src="./img/02-03.png" width="600">
 
 <br><br>
 
@@ -152,11 +152,11 @@ Tomcatを起動している状態で、ブラウザを開いて以下のURLに�
 
 Tomcatを起動している状態で、ブラウザを開いて以下のURLにアクセスします。<br>http://localhost:8080/book_shop/list
 
-<img src="./img/03-01.png">
+<img src="./img/03-01.png" width="600">
 
 Python Bookの削除ボタンをクリックするとPython Bookのデータが削除されて⼀覧画⾯に遷移します。
 
-<img src="./img/03-02.png">
+<img src="./img/03-02.png" width="600">
 
 <br><br>
 
@@ -185,14 +185,14 @@ Python Bookの削除ボタンをクリックするとPython Bookのデータが�
 
 ブラウザを開いて以下のURLにアクセスします。<br>http://localhost:8080/book_shop/list
 
-<img src="./img/04-01.png">
+<img src="./img/04-01.png" width="600">
 
 Ruby Bookの編集ボタンをクリックすると次の画⾯が表⽰されます。
 
-<img src="./img/04-02.png">
+<img src="./img/04-02.png" width="600">
 
 編集画⾯でタイトルと価格を変更して編集ボタンをクリックするとRuby Bookのタイトルと価格が更新されて⼀覧画⾯に遷移します。
 
-<img src="./img/04-03.png">
+<img src="./img/04-03.png" width="600">
 
 <br><br>
