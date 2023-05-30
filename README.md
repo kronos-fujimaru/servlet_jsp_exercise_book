@@ -101,6 +101,10 @@ Tomcatを起動している状態で、ブラウザから以下のURLにアク�
 
 <br><br>
 
+[解答例](./ans/00.md)
+
+<br><br>
+
 ### 課題1（書籍登録）
 
 書籍登録画面から書籍を新規登録するプログラムを作成します。
@@ -110,6 +114,7 @@ Tomcatを起動している状態で、ブラウザから以下のURLにアク�
 - add.jsp　**※作成済み**
 - BookAddServlet.java　**要新規作成**
 	- パッケージ：jp.kronos.servlet
+    - URLパターン：/add
     - doGet
     	- 登録画面（add.jsp）にフォワードする
     - doPost
@@ -137,6 +142,10 @@ Tomcatを起動している状態で、ブラウザを開いて以下のURLに�
 
 <br><br>
 
+[解答例](./ans/01.md)
+
+<br><br>
+
 ### 課題2（書籍削除）
 
 書籍一覧画面から書籍を削除するプログラムを作成します。
@@ -145,6 +154,7 @@ Tomcatを起動している状態で、ブラウザを開いて以下のURLに�
 	- 削除ボタンを追加する
 - BookDeleteServlet.java　**要新規作成**
 	- パッケージ：jp.kronos.servlet
+    - URLパターン：/delete
 	- doPost
     	- リクエストパラメータ（ID）を取得する
         - IDをもとにBookテーブルの対象データを削除する
@@ -164,6 +174,10 @@ Python Bookの削除ボタンをクリックするとPython Bookのデータが�
 
 <br><br>
 
+[解答例](./ans/02.md)
+
+<br><br>
+
 ### 課題3（書籍更新）
 
 書籍編集画面から書籍を更新するプログラムを作成します。
@@ -174,6 +188,7 @@ Python Bookの削除ボタンをクリックするとPython Bookのデータが�
 	- コメントの**TODO**の部分を実装する
 - BookEditServlet.java　**※要新規作成**
 	- パッケージ：jp.kronos.servlet
+    - URLパターン：/edit
 	- doGet
     	- リクエストパラメータ（ID）を取得する
         - IDをもとにBookデータを取得する
