@@ -2,7 +2,7 @@
 
 ## 準備
 
-書籍情報を表示したり、編集したりするWebアプリケーションをMVCパターンに従って作成します。次のプロジェクト（Zipファイル）をインポートして開発を進めてください。
+書籍情報を表示したり、編集したりするWebアプリケーションをMVCパターンに従って作成します。次のプロジェクト（warファイル）をインポートして開発を進めてください。
 
 [演習用プロジェクト](./src/book_shop.war)
 
@@ -41,6 +41,11 @@
 **DDL + 初期データ**
 
 ```sql
+DROP DATABASE IF EXISTS BOOK;
+CREATE DATABASE IF NOT EXISTS BOOK;
+
+USE BOOK;
+
 CREATE TABLE CATEGORY (
     ID INTEGER PRIMARY KEY AUTO_INCREMENT,
     CAT_NAME VARCHAR(50) UNIQUE NOT NULL
@@ -62,6 +67,9 @@ INSERT INTO CATEGORY VALUES (4, 'マンガ');
 INSERT INTO BOOK VALUES (1, 'Java Book', 3000, 1);
 INSERT INTO BOOK VALUES (2, 'PHP Book', 2000, 1);
 INSERT INTO BOOK VALUES (3, 'Ruby Book', 4000, 1);
+
+SELECT * FROM BOOK;
+SELECT * FROM CATEGORY;
 ```
 
 <br>
@@ -249,7 +257,24 @@ Ruby Bookの編集ボタンをクリックすると次の画⾯が表⽰され�
 
 <br><br>
 
-### 課題5（書籍一覧の改修）
+### 課題5（価格の表示）
+
+書籍一覧画面の価格を「￥ 9,999,999」のようにカンマ区切りで表示します。
+
+- list.jsp　**※要修正**
+	- 価格をカンマ区切りで表示する
+
+<br>
+
+**＜期待結果＞**
+
+ブラウザを開いて以下のURLにアクセスします。<br>http://localhost:8080/book_shop/list
+
+<img src="./img/06-01.png" width="600">
+
+<br><br>
+
+### 課題6（書籍一覧の改修）
 
 書籍一覧画面にカテゴリ名を追加表示するプログラムを作成します。
 
@@ -264,32 +289,32 @@ Ruby Bookの編集ボタンをクリックすると次の画⾯が表⽰され�
 
 ブラウザを開いて以下のURLにアクセスします。<br>http://localhost:8080/book_shop/list
 
-<img src="./img/06-01.png" width="600">
-
-検索時にもカテゴリ名が表示されるように修正してください。
-
-<img src="./img/06-02.png" width="600">
-
-<br><br>
-
-### 課題6（書籍登録の改修）
-
-書籍登録画面にカテゴリ名をリストボックスで追加表示します。登録時に、選択したカテゴリ名に紐づくIDもBookテーブルに登録するよう修正します。
-
-> カテゴリ名はCategoryテーブルから取得します。
-
 <img src="./img/07-01.png" width="600">
 
-選択したカテゴリ名のIDがBookテーブルに登録され、登録されたIDに紐づくカテゴリ名で一覧に表示されます。
+検索時にもカテゴリ名が表示されるように修正してください。
 
 <img src="./img/07-02.png" width="600">
 
 <br><br>
 
-### 課題7（書籍編集の改修）
+### 課題7（書籍登録の改修）
+
+書籍登録画面にカテゴリ名をリストボックスで追加表示します。登録時に、選択したカテゴリ名に紐づくIDもBookテーブルに登録するよう修正します。
+
+> カテゴリ名はCategoryテーブルから取得します。
+
+<img src="./img/08-01.png" width="600">
+
+選択したカテゴリ名のIDがBookテーブルに登録され、登録されたIDに紐づくカテゴリ名で一覧に表示されます。
+
+<img src="./img/08-02.png" width="600">
+
+<br><br>
+
+### 課題8（書籍編集の改修）
 
 書籍編集画面にカテゴリ名をリストボックスで追加表示し、更新対象データのカテゴリ名が選択されている状態で表示します。更新時に、選択したカテゴリ名に紐づくIDでBookテーブルを更新するよう修正します。
 
-<img src="./img/08-01.png" width="600">
+<img src="./img/09-01.png" width="600">
 
 <br><br>
